@@ -11,3 +11,5 @@ jobs:
     steps:
       - name: Show the triggers
         run: echo "I've been triggered by a(n) ${{ github.event_name }} event."
+      - name: show runner_name
+        run: echo "Runner Os:$RUNNER_OS"
