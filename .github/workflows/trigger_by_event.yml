@@ -1,7 +1,7 @@
 name:  trigger_by_Events
 
 on:
-  
+  push:
   pull_request :
   workflow_dispatch:
 
