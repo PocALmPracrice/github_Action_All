@@ -1,5 +1,6 @@
 name: context_demo
 on: 
+     workflow_call:
      workflow_dispatch:
      push:
 env:
