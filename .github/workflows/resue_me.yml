@@ -1,6 +1,6 @@
 on:
   workflow_call:
-
+  push:
 jobs:
   demo:
    runs-on: ubuntu-latest
