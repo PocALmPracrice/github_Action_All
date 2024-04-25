@@ -1,8 +1,16 @@
-name: reuse_workflow
+name:  reuse
+
 on:
-  workflow_call:
   push:
+  pull_request :
+  workflow_dispatch:
+  workflow_call:
+
 jobs:
-  demo:
-   runs-on: ubuntu-latest
-    echo "hello use this workflow"
+  job1:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Show the triggers
+        run: echo "I've been triggered by a(n) ${{ github.event_name }} event."
+      - name: show runner_name
+        run: echo "Runner Os:$RUNNER_OS"
