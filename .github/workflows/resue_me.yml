@@ -1,3 +1,4 @@
+name: reuse_workflow
 on:
   workflow_call:
   push:
